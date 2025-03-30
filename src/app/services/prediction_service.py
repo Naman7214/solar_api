@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Depends
-from app.config.settings import settings
-from app.utils.prediction_utils import Utils
+from src.app.config.settings import settings
+from src.app.utils.prediction_utils import Utils
 
 class PredictionService:
     def __init__(self, utils: Utils = Depends(Utils)):

@@ -1,5 +1,5 @@
 from fastapi import Depends, HTTPException, status
-from app.usecases.prediction_usecase import PredictionUsecase
+from src.app.usecases.prediction_usecase import PredictionUsecase
 
 class PredictionContoller:
     def __init__(self, usecase: PredictionUsecase = Depends()):

@@ -1,10 +1,10 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException, Request, status
 from fastapi.responses import JSONResponse
 from contextlib import asynccontextmanager
-from app.config.settings import settings
+from src.app.config.settings import settings
 import tensorflow as tf
-from app.routes.prediction_route import router as prediction_router
-from app.routes.get_description_route import router as description_router
+from src.app.routes.prediction_route import router as prediction_router
+from src.app.routes.get_description_route import router as description_router
 from fastapi.middleware.cors import CORSMiddleware
 
 

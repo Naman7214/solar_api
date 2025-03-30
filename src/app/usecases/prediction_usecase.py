@@ -1,5 +1,5 @@
 from fastapi import Depends
-from app.services.prediction_service import PredictionService
+from src.app.services.prediction_service import PredictionService
 
 class PredictionUsecase:
     def __init__(self, service: PredictionService = Depends()):

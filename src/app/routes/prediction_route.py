@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status, UploadFile, File
 import uuid
 import os
-from app.controllers.prediction_controller import PredictionContoller
+from src.app.controllers.prediction_controller import PredictionContoller
 
 router = APIRouter()
 

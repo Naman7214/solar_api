@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.vgg16 import preprocess_input
-from app.config.settings import settings
+from src.app.config.settings import settings
 import os
 
 class Utils:
